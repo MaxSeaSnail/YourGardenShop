@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Shop</title>
+  <title>Grow A Garden Shop</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
+      font-family: "Segoe UI", sans-serif;
+      background: #eafbea;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
 
     header {
-      background: #333;
+      background: #2d6a4f;
       color: white;
       padding: 20px;
+      text-align: center;
     }
 
     h1 {
@@ -33,9 +33,15 @@
       background: white;
       margin: 15px;
       padding: 20px;
-      width: 220px;
+      width: 240px;
       border-radius: 12px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
     }
 
     .product img {
@@ -45,12 +51,12 @@
 
     .price {
       font-size: 18px;
-      color: #333;
+      color: #2d6a4f;
       margin: 10px 0;
     }
 
     button {
-      background: #27ae60;
+      background: #40916c;
       color: white;
       padding: 10px 15px;
       border: none;
@@ -60,27 +66,27 @@
     }
 
     button:hover {
-      background: #219150;
+      background: #1b4332;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🛍️ My Custom Shop</h1>
-    <p>Choose your favorite items below</p>
+    <h1>🌱 Grow A Garden Shop</h1>
+    <p>Everything you need to grow your dream garden & care for garden pets!</p>
   </header>
 
   <div class="products">
 
     <!-- PRODUCT 1 -->
     <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Your Product">
-      <h2>Product Name</h2>
-      <p class="price">$19.99</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Tomato_je.jpg" alt="Tomato Plant">
+      <h2>Tomato Plant</h2>
+      <p class="price">$5.99</p>
       <form action="https://www.paypal.com/buy" method="post" target="_blank">
-        <input type="hidden" name="item_name" value="Product Name">
-        <input type="hidden" name="amount" value="19.99">
+        <input type="hidden" name="item_name" value="Tomato Plant">
+        <input type="hidden" name="amount" value="5.99">
         <input type="hidden" name="currency_code" value="USD">
         <button type="submit">Buy Now</button>
       </form>
@@ -88,12 +94,12 @@
 
     <!-- PRODUCT 2 -->
     <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Your Product">
-      <h2>Another Product</h2>
-      <p class="price">$29.99</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Sunflower_from_Silesia2.jpg" alt="Sunflower Seeds">
+      <h2>Sunflower Seeds</h2>
+      <p class="price">$2.49</p>
       <form action="https://www.paypal.com/buy" method="post" target="_blank">
-        <input type="hidden" name="item_name" value="Another Product">
-        <input type="hidden" name="amount" value="29.99">
+        <input type="hidden" name="item_name" value="Sunflower Seeds">
+        <input type="hidden" name="amount" value="2.49">
         <input type="hidden" name="currency_code" value="USD">
         <button type="submit">Buy Now</button>
       </form>
@@ -101,12 +107,25 @@
 
     <!-- PRODUCT 3 -->
     <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Your Product">
-      <h2>Third Product</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Rabbit_in_montana.jpg" alt="Garden Bunny">
+      <h2>Garden Bunny</h2>
       <p class="price">$39.99</p>
       <form action="https://www.paypal.com/buy" method="post" target="_blank">
-        <input type="hidden" name="item_name" value="Third Product">
+        <input type="hidden" name="item_name" value="Garden Bunny">
         <input type="hidden" name="amount" value="39.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <button type="submit">Adopt Now</button>
+      </form>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Garden_tools.jpg" alt="Garden Tools">
+      <h2>Garden Tools Set</h2>
+      <p class="price">$24.99</p>
+      <form action="https://www.paypal.com/buy" method="post" target="_blank">
+        <input type="hidden" name="item_name" value="Garden Tools">
+        <input type="hidden" name="amount" value="24.99">
         <input type="hidden" name="currency_code" value="USD">
         <button type="submit">Buy Now</button>
       </form>
